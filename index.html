@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link href='css/web_share.css' media='screen' rel='stylesheet'/>
+
+    <script src='js/jquery.min_18.js'></script>
+    <script src='js/underscore-min_133.js'></script>
+    <script src='js/backbone-min_092.js'></script>
+    <script src='js/web_share.js'></script>
+</head>
+
+<body>
+<div class='container'>
+    <div>
+        <h3> Backbone.js & Indexed DB Demo.</h3>
+    </div>
+    <div class='row' id='web-share-create'>
+        <div>URL :
+            <input class='web-url' id="url" name='url'
+                   placeholder='Enter web URL that you want to share here'
+                   type='text' size="80"/>
+        </div>
+
+        <div>
+            Label: <input name='label' placeholder='Label' id="label" type='text'/>
+        </div>
+
+        <div>
+            <button class='btn' name='btn_submit'>Save</button>
+        </div>
+    </div>
+
+    <div class='row-fluid web_shares' id='web-share-list'></div>
+
+</div>
+<script id='webshare-item-template' type='text/template'>
+    <div class='item'><a class='content' href='<%= url %>'> <%- url %> </a>
+
+        <div class='share_label'> <%- label %></div>
+        <div class='status'> done</div>
+    </div>
+</script>
+
+</body>
+
+</html> 

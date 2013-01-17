@@ -1,0 +1,44 @@
+.item {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border-bottom: 0px;
+}
+
+.item .content {
+    display: block;
+    word-wrap: break-word;
+    height: 60%;
+    width: inherit;
+    border: 2px solid #666666;
+    border-bottom: 1px dotted #666666;
+}
+
+.item .share_label {
+    width: inherit;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    border: 2px solid #666666;
+    border-bottom: 1px dotted #666666;
+    border-top: none;
+}
+
+.item .status {
+    width: inherit;
+    text-align: right;
+    border: 2px solid #666666;
+    border-top: none;
+}
+
+.btn {
+    margin-left: 40px;
+}
+
+.row {
+    clear: both;
+}
